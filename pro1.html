@@ -9,6 +9,207 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>BLOGS</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 80vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+.header_container{
+    margin-bottom: 2.8rem;
+}
+
+a{
+    text-decoration: none;
+}
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.header_description{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105,99,99);
+    margin: 0 auto;
+    
+}
+
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    
+
+}
+
+@media (min-width:100px){
+    .main_container{
+        grid-template-columns: repeat(1,1fr);}
+    
+} 
+@media (min-width:800px){
+    .main_container{
+        grid-template-columns: repeat(2,1fr);}
+    
+} 
+    
+
+
+@media (min-width:1080px) {
+    .main_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width:1340px) {
+    .main_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+
+
+
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(210, 196, 196);
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+
+.card_container:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+
+}
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+@media (min-width:768px) {
+    .card_image_container{
+        position: relative;
+        overflow: hidden;
+        height: 16rem;
+    }
+}
+
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+
+.card_title{
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: rgb(20, 19, 19);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.card_title_anchor:hover .card_title{
+    color: aqua;
+
+}
+
+.card_desc{
+    color: rgb(31, 29, 29);
+    font-size: 1rem;
+}
+
+
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: end;
+}
+
+.author_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.author_avtar_container{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(27, 25, 25);
+    border-radius: 50%;
+    background-color: rgb(139, 132, 132);
+}
+
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.author_name{
+    color:rgb(60, 60, 203) ;
+    
+}
+.author_date{
+    color:rgb(129, 116, 116);
+}
+
+.card_tag_container{
+    border: 1px solid rgb(54, 48, 48);
+    border-radius: 3px;
+    font-size: 0.77rem;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: gray;
+    height: 2rem;
+    /* margin: 0.70rem ; */
+
+}
+    </style>
 </head>
 <body class="body_container">
     <div class="container">
